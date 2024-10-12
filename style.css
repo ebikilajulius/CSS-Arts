@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+    
+body{
+    
+    background: #0a0808;
+    
+}
+.snowman{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+.head{
+    width:180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 50%;
+}
+.eyes span{
+    display: inline-block;
+    width: 15px;
+    height:0px; /*25px*/
+    background:#333;
+    border-radius:50%;
+    animation: eyes 0.5s linear forwards;
+    animation-delay: 1.5s;
+    margin: 0 20px;
+}
+.eyes{
+    text-align:center;
+    margin-top:40px;
+
+}
+.nose{
+    width:15px;
+    height:0;
+    background:rgb(236, 57, 12);
+   border-radius:50% ;
+   margin: 0 auto;
+   animation: eyes 0.5s linear forwards;
+   animation-delay: 2s;
+
+}
+.mouth{
+    width: 0;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    animation: mouth 0.5s linear forwards;
+   animation-delay: 2.5s;
+
+}
+.body{
+    width:0px; /*250px*/
+    height: 0px;
+    background:#fff;
+    border-radius: 50%;
+    margin-top:-40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: body 1s linear forwards;
+    animation-delay: 0.5s;
+}
+.body span{
+    width: 12px;
+    height: 12px;
+    background:#333;
+    border-radius: 50%;
+    margin: 5px;
+}
+@keyframes body {
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+}
+@keyframes eyes {
+    100%{
+         height: 25px;
+    }
+}
+@keyframes nose {
+    100%{
+         height: 30px;
+    }
+}
+@keyframes mouth {
+    100%{
+         width: 40px;
+    }
+}
+/*.box{
+    
+        width: 60%;
+        height: 400px;
+        text-align: center;
+        margin: 20px 10px 20px 30px;
+        padding: 10px 40px 20px ;
+        border-style: solid;
+        border-color: #611061;
+        border-width: 5px;
+        border-radius: 5px;
+       
+      
+}
+.red span{
+    width: 10%;
+    height: 60px;
+    padding: 40px 30px;
+    margin: 50px 30px 60px 30px;
+    box-sizing: 10px;
+    border-style: dotted;
+    border-color: #27097a;
+    border-width: 5px;
+}*/
+
+
